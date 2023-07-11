@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Taker - Notes</title>
+    <link href="/styles.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 dark:bg-gray-900">
+    <div class="max-w-md mx-auto mt-8 notebook">
+      <h1 class="notebook-title text-3xl font-bold mb-4">Notes</h1>
+      <div id="existing-notes" class="mb-4">
+        <!-- Existing notes will be populated here -->
+      </div>
+      <div id="new-note">
+        <input
+          type="text"
+          id="note-title"
+          class="notebook-text mb-2 p-2 w-full border border-gray-300 rounded"
+          placeholder="Note Title"
+        />
+        <textarea
+          id="note-text"
+          class="notebook-text mb-2 p-2 w-full border border-gray-300 rounded"
+          placeholder="Note Text"
+        ></textarea>
+        <button id="save-note" class="button">Save</button>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
