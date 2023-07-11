@@ -11,6 +11,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
+app.set('view engine', 'ejs');
+
 // API routes
 app.get('/api/notes', (req, res) => {
   fs.readFile(path.join(__dirname, 'db.json'), 'utf8', (err, data) => {
